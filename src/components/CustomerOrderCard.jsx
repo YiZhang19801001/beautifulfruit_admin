@@ -121,7 +121,6 @@ class CustomerOrderCard extends React.Component {
   handleOnChange = e => {
     const { checked } = e.target;
     this.setState({ checked });
-    console.log({ order_id: this.props.order.order_id });
 
     this.props.markingOrder(this.props.order.order_id, checked);
   };

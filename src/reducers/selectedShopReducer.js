@@ -5,8 +5,6 @@ const selectedShopReducer = (
   selectedShop = { open: [{ open_date: "", open_time: "", close_time: "" }] },
   action
 ) => {
-  console.log({ action });
-
   const checkOpenDates = newDate => {
     let flag = false;
     if (!selectedShop || !selectedShop.open) {
@@ -26,8 +24,6 @@ const selectedShopReducer = (
   if (action.type === actionTypes.fetchSingleShop) {
     return action.payload;
   } else if (action.type === actionTypes.shopOpenDateChange) {
-    console.log("date added");
-
     const newDate = action.payload;
     const isIncludes = checkOpenDates(newDate);
     if (!isIncludes) {
@@ -39,7 +35,6 @@ const selectedShopReducer = (
     return selectedShop;
   } else if (action.type === actionTypes.dismissDate) {
     const newDate = action.payload;
-    console.log("worked");
 
     return {
       ...selectedShop,

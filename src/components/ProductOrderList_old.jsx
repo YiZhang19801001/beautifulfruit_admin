@@ -9,8 +9,6 @@ class ProductOrderList extends React.Component {
   }
 
   getStyle = (num, maxNum, index) => {
-    console.log(index);
-
     return {
       height: "45px",
       width: "100%",

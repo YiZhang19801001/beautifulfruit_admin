@@ -133,17 +133,6 @@ class ShopForm extends React.Component {
           }}
           className="component-shop-form__date-picker__label"
         >
-          {/* <DatePicker
-            dayClassName={this.getCalendarDayClass}
-            selected={this.state.startDate}
-            onChange={this.handleDateChange}
-            highlightDates={highlightDates}
-            shouldCloseOnSelect={false}
-            showTimeSelect
-            dateFormat="MMMM d, yyyy h:mm aa"
-            withPortal
-          /> */}
-
           <span className="component-shop-form__date-picker__title">
             请选择可以取货的日期
           </span>

@@ -78,6 +78,12 @@ const active = location_id => {
   };
 };
 
+const dismissDate = newDate => {
+  return {
+    type: types.dismissDate,
+    payload: newDate
+  };
+};
 export default {
   index,
   active,
@@ -86,5 +92,6 @@ export default {
   create,
   update,
   patch,
+  dismissDate,
   handleDateChange
 };
